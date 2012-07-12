@@ -12,11 +12,11 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: posdb
+  database: ventitas-api_development
   pool: 5
-  username: pos
-  password: posi
-  host: instance8232.db.xeround.com:6114
+  username: root
+  password: 
+  host: localhost
 
 
 # Warning: The database defined as "test" will be erased and
