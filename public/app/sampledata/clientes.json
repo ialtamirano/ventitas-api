@@ -1,0 +1,59 @@
+[
+    {
+        "clienteid": 1, 
+        "clientenombre": "Bianca Anaid", 
+        "clienteapellido": "Leyva Zazueta", 
+        "clientefechanacimiento": "1987-06-25 11:11AM", 
+        "clientegenero": "Femenino", 
+        "clientetelefono": "6228557635",
+        "clienteemail":"bianca.leyva@gmail.com",
+        "clientedireccion": "colinas del mar #1998, las colinas",
+        "clientecp" : "85440",
+        "clienteciudad": "Guaymas",
+        "clienteestado":"Sonora",
+        "clientepais":"Mexico",
+        "clienterfc":"",
+        "clientefoto":"",
+        "clientenotas":"Estes es un buen cliente"
+
+    }, 
+    {
+        "clienteid": 2, 
+        "clientenombre": "Ivan Alberto", 
+        "clienteapellido": "Altamirano Garcia", 
+        "clientefechanacimiento": "1984-06-22 11:11AM", 
+        "clientegenero": "Masculino", 
+        "clientetelefono": "6228557645",
+        "clienteemail":"ivan.altamirano@gmail.com",
+        "clientedireccion": "colinas del mar #20, las colinas",
+        "clientecp" : "85440",
+        "clienteciudad": "Guaymas",
+        "clienteestado":"Sonora",
+        "clientepais":"Mexico",
+        "clienterfc":"IAAG22061984",
+        "clientefoto":"",
+        "clientenotas":"Estes es un cliente excelente"
+
+    }
+    , 
+    {
+        "clienteid": 3, 
+        "clientenombre": "Pablo", 
+        "clienteapellido": "Bretado", 
+        "clientefechanacimiento": "1984-05-12", 
+        "clientegenero": "Masculino", 
+        "clientetelefono": "6228557638",
+        "clienteemail":"bretado.up@gmail.com",
+        "clientedireccion": "Santa fe,springs",
+        "clientecp" : "85440",
+        "clienteciudad": "Tijuana",
+        "clienteestado":"Baja California",
+        "clientepais":"Mexico",
+        "clienterfc":"IAAG22061984",
+        "clientefoto":"",
+        "clientenotas":"Estes es un cliente excelente"
+
+    }
+     ]
+
+
