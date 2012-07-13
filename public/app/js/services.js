@@ -12,10 +12,10 @@ var MyApp = angular.module('myApp.services', ['ngResource']).
 MyApp.factory('Cliente', function($resource) {
 
  	 return $resource(   host+'clientes/:ClienteId', {}, {
- 	 					 get   : { method:'GET' },
- 	 					 query : { method:'GET', isArray:true},
- 	 					 save  : { method:'POST' },
- 	 					 remove: { method: ''    }
+ 	 		     get   : { method:'GET'  },
+ 	 		     query : { method:'GET'  , isArray:true},
+ 	 		     save  : { method:'POST' },
+ 	 		     remove: { method:''     }
 
 	});
 });
