@@ -2,7 +2,7 @@
 
 /* Services */
 
-var host="";
+var host="http://ec2-23-23-137-62.compute-1.amazonaws.com/";
 
 // Demonstrate how to register services
 // In this case it is a simple value service.
