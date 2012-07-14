@@ -2,11 +2,12 @@
 <h3>{{cliente.nombre}}</h3>
  <form novalidate class="simple-form">
         Nombre: <input type="text" ng-model="cliente.nombre" /><br />
-        Apellido: <input type="email" ng-model="cliente.apellido" /><br />
-        Fecha de Nacimiento: <input type="email" ng-model="cliente.f_nac" /><br />
-        Genero: <input type="radio" ng-model="cliente.genero" value="masculino" />male
-        <input type="radio" ng-model="cliente.genero" value="femenino" />female<br />
-        Telefono: <input type="email" ng-model="cliente.telefono" /><br />
+        Apellido: <input type="text" ng-model="cliente.apellido" /><br />
+        Fecha de Nacimiento: <input type="text" ng-model="cliente.f_nac" /><br />
+        Genero: <input type="radio" ng-model="cliente.genero" value="masculino" />Masculino
+        <input type="radio" ng-model="cliente.genero" value="femenino" />Femenino<br />
+        Email: <input type="email" ng-model="cliente.email" /><br />
+        Telefono: <input type="text" ng-model="cliente.telefono" /><br />
         <button ng-click="reset()" class="btn">Restablecer</button>
         <button ng-click="update(user)" class="btn btn-primary">Guardar</button>
       </form>
