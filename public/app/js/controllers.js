@@ -44,7 +44,7 @@ function ClientesEditCtrl($scope,$routeParams, Cliente){
       $scope.update = function (cliente)
       {
       	$scope.master = angular.copy(cliente);
-      
+        Cliente.update(clienteId:cliente);
       	
       }
       
