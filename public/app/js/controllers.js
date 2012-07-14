@@ -47,7 +47,7 @@ function ClientesEditCtrl($scope,$routeParams, Cliente){
       }
       
       $scope.reset = function(){
-      	 $scope.cliente = angular.copy($scope.master)
+      	 $scope.cliente = angular.copy($scope.master);
       }
 
 
