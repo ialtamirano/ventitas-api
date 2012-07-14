@@ -39,10 +39,12 @@ function ClientesCtrl($scope, Cliente){
 function ClientesEditCtrl($scope,$routeParams, Cliente){
 	
       $scope.cliente = Cliente.get({clienteId:$routeParams.id});
+      $scope.master  = angular.copy(cliente);
 	
       $scope.update = function (cliente)
       {
       	$scope.master = angular.copy(cliente);
+      
       	
       }
       
