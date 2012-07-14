@@ -14,7 +14,9 @@ MyApp.factory('Cliente', function($resource) {
  	 return $resource(   host+'clientes/:clienteId', {}, {
  	 		     get   : { method:'GET'  },
  	 		     query : { method:'GET'  , isArray:true},
+ 	 		     update  : { method:'POST' },
  	 		     update  : { method:'PUT' },
+ 	 		     
  	 		     remove: { method:''     }
 
 	});
