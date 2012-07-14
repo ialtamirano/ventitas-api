@@ -37,7 +37,7 @@ function ClientesCtrl($scope, Cliente){
 
 }
 function ClientesEditCtrl($scope,$routeParams, Cliente){
-	$scope.cliente = Cliente.query({clienteId:$routeParams.id});
+	$scope.cliente = Cliente.get({clienteId:$routeParams.id});
 
 
 }
