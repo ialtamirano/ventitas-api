@@ -10,5 +10,6 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives'])
     $routeProvider.when('/productos', {templateUrl: 'partials/productos.html', controller: ProductosCtrl});
     $routeProvider.when('/clientes', {templateUrl: 'partials/clientes.html', controller: ClientesCtrl});
     $routeProvider.when('/clientes/edit/:id', {templateUrl: 'partials/clientes-modal.html', controller: ClientesEditCtrl});
+    $routeProvider.when('/clientes/delete/:id', {templateUrl: 'partials/clientes-modal.html', controller: ClientesEditCtrl});
     $routeProvider.otherwise({redirectTo: '/home'});
   }]);
