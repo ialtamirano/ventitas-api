@@ -42,7 +42,7 @@ function ClientesCtrl($scope, Cliente)
 }
 
 
-function ClientesNewCtrl($scope,$routeParams, Cliente){
+function ClientesNewCtrl($scope,$routeParams, $location,Cliente){
 	
       $scope.cliente = Cliente.new({clienteId:'new'});
       $scope.master  = angular.copy($scope.cliente);
@@ -51,6 +51,7 @@ function ClientesNewCtrl($scope,$routeParams, Cliente){
       {
         Cliente.create({cliente:cliente});
       	$scope.master = angular.copy(cliente);
+      	$location.path('/clientes');
   
       }
       
