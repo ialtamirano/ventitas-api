@@ -16,8 +16,7 @@ MyApp.factory('Cliente', function($resource) {
  	 		     query : { method:'GET'  , isArray:true},
  	 		     new  : { method:'POST' },
  	 		     update  : { method:'PUT' },
- 	 		     
- 	 		     remove: { method:''     }
+ 	 		     delete: { method:'DELETE'}
 
 	});
 });
