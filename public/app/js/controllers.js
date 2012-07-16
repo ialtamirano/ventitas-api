@@ -38,7 +38,7 @@ function ClientesCtrl($scope, Cliente){
   
   $scope.delete = function(cliente){
   		Cliente.delete({clienteId:cliente.id});
-  		
+  		cliente.$destroy;
   	}
 
 }
