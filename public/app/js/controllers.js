@@ -24,19 +24,24 @@ VentasCtrl.$inject = [];
 function ProductosCtrl(){
 
 }
+
 ProductosCtrl.$inject = [];
 
 
-function ClientesCtrl($scope, Cliente){
+function ClientesCtrl($scope, Cliente)
+{
 	
       $scope.clientes = Cliente.query();
 
-      $scope.delete = function(cliente){
+      $scope.delete = function(cliente)
+      {
   	Cliente.delete({clienteId:cliente.id});
   	$scope.clientes.splice($scope.clientes.indexOf(cliente),1);
       }
 
 }
+
+
 function ClientesEditCtrl($scope,$routeParams, Cliente){
 	
       $scope.cliente = Cliente.get({clienteId:$routeParams.id});
@@ -44,17 +49,7 @@ function ClientesEditCtrl($scope,$routeParams, Cliente){
 	
       $scope.update = function (cliente)
       {
-      	
-      	
-      	
-      	if ( cliente.id )
-      	{
-		Cliente.update({clienteId:cliente.id}, { cliente:cliente });
-      	}else{
-      	
-      		Cliente.new({clienteId:{cliente:cliente});
-      	}	
-      	
+        Cliente.update({clienteId:cliente.id}, { cliente:cliente });
       	$scope.master = angular.copy(cliente);
       }
       
@@ -65,9 +60,6 @@ function ClientesEditCtrl($scope,$routeParams, Cliente){
 
 function ClientesModalCtrl($scope, Cliente){
 	$scope.clientes = Cliente.query();
-	// $http.get('sampledata/clientes.json').success(function(data) {
-    //$scope.clientes = data;
- // });
  
   $scope.orderProp = 'nombre';
 
