@@ -44,7 +44,7 @@ function ClientesCtrl($scope, Cliente)
 
 function ClientesNewCtrl($scope,$routeParams, Cliente){
 	
-      $scope.cliente = Cliente.new({clienteId:'new');
+      $scope.cliente = Cliente.new({clienteId:'new'});
       $scope.master  = angular.copy($scope.cliente);
 	
       $scope.update = function (cliente)
