@@ -38,7 +38,7 @@ function ClientesCtrl($scope, Cliente){
   
   $scope.delete = function(cliente){
   		Cliente.delete({clienteId:cliente.id});
-  		//$scope.clientes.splice($scope.clientes.indexOf(cliente),1);
+  		$scope.clientes.splice($scope.clientes.indexOf(cliente),1);
   	}
 
 }
