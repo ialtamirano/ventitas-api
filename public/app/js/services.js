@@ -12,11 +12,12 @@ var MyApp = angular.module('myApp.services', ['ngResource']).
 MyApp.factory('Cliente', function($resource) {
 
  	 return $resource(   host+'clientes/:clienteId', {}, {
- 	 		     get   : { method:'GET'  },
- 	 		     query : { method:'GET'  , isArray:true},
- 	 		     new  : { method:'POST' },
- 	 		     update  : { method:'PUT' },
- 	 		     delete: { method:'DELETE'}
+			     query  : { method:'GET'    , isArray:true},
+ 	 		     get    : { method:'GET'   },
+ 	 		     new    : { method:'GET'   },
+ 	 		     create : { method:'POST'  },
+ 	 		     update : { method:'PUT'   },
+ 	 		     delete : { method:'DELETE'}
 
 	});
 });
