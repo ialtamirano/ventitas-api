@@ -1,6 +1,6 @@
 <div ng-controller="ClientesEditCtrl" >
 <h3>{{cliente.nombre}}</h3>
- <form novalidate class="simple-form">
+ <form novalidate class="simple-form" >
         Nombre: <input type="text" ng-model="cliente.nombre" /><br />
         Apellido: <input type="text" ng-model="cliente.apellido" /><br />
         Fecha de Nacimiento: <input type="text" ng-model="cliente.f_nac" /><br />
@@ -8,9 +8,9 @@
         <input type="radio" ng-model="cliente.genero" value="femenino" />Femenino<br />
         Email: <input type="email" ng-model="cliente.email" /><br />
         Telefono: <input type="text" ng-model="cliente.telefono" /><br />
-        Direccion: <input type="text" ng-model="cliente.direccion" /><br />
-        <button ng-click="reset()" class="btn">Restablecer</button>
+        Direccion: <input type="text" ng-model="cliente.direccion" /><br />        
         <button ng-click="update(cliente)" class="btn btn-primary">Guardar</button>
+        <button ng-click="reset()" class="btn">Restablecer</button>
       </form>
       <pre>form = {{cliente | json}}</pre>
       <pre>master = {{master | json}}</pre>
