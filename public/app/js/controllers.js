@@ -34,6 +34,12 @@ function ClientesCtrl($scope, Cliente){
  // });
  
   $scope.orderProp = 'nombre';
+  
+  
+  $scope.delete = function(cliente){
+  		Cliente.delete({clienteId:cliente.id});
+  		
+  	}
 
 }
 function ClientesEditCtrl($scope,$routeParams, Cliente){
