@@ -62,7 +62,7 @@ function ClientesNewCtrl($scope,$routeParams, $location,Cliente){
 
 
 
-function ClientesEditCtrl($scope,$routeParams, Cliente){
+function ClientesEditCtrl($scope,$routeParams, $location,Cliente){
 	
       $scope.cliente = Cliente.get({clienteId:$routeParams.id});
       $scope.master  = angular.copy($scope.cliente);
